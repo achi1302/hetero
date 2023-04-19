@@ -1,0 +1,441 @@
+#Nombre-del-Usuario
+{
+    position: absolute;
+    width: 130px;
+    height: 45px;
+    left: 40px;
+    top: 12px;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    
+    color: #000000;
+}
+#Apellido-del-Usuario
+{
+    position: absolute;
+    width: 248px;
+    height: 39px;
+    left: 40px;
+    top: 70px;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    
+    color: #000000;
+}
+
+#Ocupacion
+{
+    position: absolute;
+    width: 350px;
+    height: 18px;
+    left: 40px;
+    top: 170px;
+    
+    /* Cover Letter/Subtitle */
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    
+    color: #888888;
+}
+#contact
+{
+    position: absolute;
+width: 115px;
+height: 33px;
+left: 40px;
+top: 210px;
+text-decoration-line: underline;  
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 49px;
+/* identical to box height */
+
+
+color: #000000;
+}
+#Telefono
+{
+    position: absolute;
+    width: 115px;
+    height: 33px;
+    left: 40px;
+    top: 275px;
+    
+
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    
+    color: #888888;
+}
+#Email
+{
+    position: absolute;
+    width: 115px;
+    height: 33px;
+    left: 40px;
+    top: 300px;
+    
+
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    
+    color: #888888;
+}
+#habilidades
+{
+    position: absolute;
+    width: 115px;
+    height: 33px;
+    left: 40px;
+    top: 335px;
+    text-decoration-line: underline;  
+
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 49px;
+}
+
+#Habilidad1
+{
+    position: absolute;
+    width: 300px;
+    height: 33px;
+    left: 40px;
+    top: 395px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    
+    color: #888888;
+}
+#Habilidad2
+{
+    position: absolute;
+    width: 300px;
+    height: 33px;
+    left: 40px;
+    top: 420px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    
+    color: #888888;
+}
+#Habilidad3
+{
+    position: absolute;
+    width: 300px;
+    height: 33px;
+    left: 40px;
+    top: 445px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    
+    color: #888888;
+}
+#Habilidad4
+{
+    position: absolute;
+    width: 300px;
+    height: 33px;
+    left: 40px;
+    top: 470px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    
+    color: #888888;
+}
+#Habilidad5
+{
+    position: absolute;
+    width: 300px;
+    height: 33px;
+    left: 40px;
+    top: 495px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    
+    color: #888888;
+}
+#formacion
+{
+    position: absolute;
+    width: 300px;
+    height: 33px;
+    left: 40px;
+    top: 530px;
+
+    text-decoration-line: underline;  
+
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 49px;
+}
+#Escuela
+{
+    position: absolute;
+    width: 300px;
+    height: 33px;
+    left: 40px;
+    top: 590px;
+
+}
+#TiempoEscuela
+{
+    position: absolute;
+    width: 300px;
+    height: 33px;
+    left: 40px;
+    top: 625px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    
+    color: #888888;
+
+}
+#TituloEjemplo
+{
+    position: absolute;
+    width: 300px;
+    height: 33px;
+    left: 40px;
+    top: 650px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    
+    color: #888888;
+}
+#perfil
+{
+    
+position: absolute;
+width: 101px;
+height: 32px;
+left: 500px;
+top: 210px;
+
+text-decoration-line: underline;  
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 49px;
+
+color: #000000;
+}
+
+#Pérfil
+{
+    position: absolute;
+width: 318px;
+height: 110px;
+left: 500px;
+top: 265px;
+
+/* Cover Letter/Subtitle */
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+
+color: #888888;
+}
+
+#experiencia
+{
+    position: absolute;
+width: 500px;
+height: 27px;
+left: 500px;
+top: 400px;
+
+text-decoration-line: underline;  
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 49px;
+
+color: #000000;
+}
+
+#Empresa1
+{
+    position: absolute;
+    width: 500px;
+    height: 27px;
+    left: 500px;
+    top: 475px;
+
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 22px;
+
+color: #000000;
+}
+#Descripcion1
+{
+    position: absolute;
+    width: 500px;
+    height: 27px;
+    left: 500px;
+    top: 530px;
+
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+
+color: #888888;
+}
+#Empresa2
+{
+    position: absolute;
+    width: 500px;
+    height: 27px;
+    left: 500px;
+    top: 620px;
+
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 22px;
+
+color: #000000;
+}
+
+#Descripcion2
+{
+    position: absolute;
+    width: 500px;
+    height: 27px;
+    left: 500px;
+    top: 675;
+
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+
+color: #888888;
+}
+
+#Empresa3
+{
+    position: absolute;
+    width: 500px;
+    height: 27px;
+    left: 500px;
+    top: 770px;
+
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 22px;
+
+color: #000000;
+}
+
+#Descripcion3
+{
+    position: absolute;
+    width: 500px;
+    height: 27px;
+    left: 500px;
+    top: 825;
+
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+
+color: #888888;
+}
+.vl
+{
+    border-left: 1px solid rgb(153, 153, 153);
+  height: 700px;
+  position: absolute;
+  left: 400px;
+  margin-left: -3px;
+  top: 250px;
+}
+
+.horizontal_line {
+    background-color: rgb(153, 153, 153);
+    width: 50%;
+    height: 1px;
+    line-height: 80%;
+    top: 100px;
+}
+
+
+
+

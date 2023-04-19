@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+
+<body>
+<div id="response"></div>
+<div class="container">
+    <div>
+        <label>Matricula:</label>
+        <input type="text" id="matricula" class="form-control" />
+    </div>
+
+            <div class="row g-3">
+                <label>Nombre Completo:</label>
+                <div class="col">
+                    <input type="text" id="nombre" class="form-control" placeholder="Nombre"
+                           aria-label="First name">
+                </div>
+                <div class="col">
+                    <input type="text" id="apellido" class="form-control" placeholder="Apellido"
+                           aria-label="Last name">
+                </div>
+            </div>
+        <div class="ocupacion">
+            <label>Ocuapción:</label>
+            <input type="text" id="ocupacion" class="form-control">
+        </div>
+        <div class="perfil">
+            <label>Perfil:</label>
+            <input type="text" id="perfil" class="form-control">
+        </div>
+
+        <div class="row g-3">
+            <label>Contacto:</label>
+            <div class="col">
+                <input type="text" id="telefono" class="form-control" placeholder="Teléfono"
+                       aria-label="phone number">
+            </div>
+            <div class="col">
+                <input type="text" id="email" class="form-control" placeholder="Correo electrónico"
+                       aria-label="e-mail">
+            </div>
+            </div>
+
+        <div class="Habilidades">
+            <label>Habilidades:</label>
+            <input type="text" id="habilidad_1" class="form-control"
+                   placeholder="Habilidad 1">
+            <input type="text" id="habilidad_2" class="form-control"
+                   placeholder="Habilidad 2">
+            <input type="text" id="habilidad_3" class="form-control"
+                   placeholder="Habilidad 3">
+            <input type="text" id="habilidad_4" class="form-control"
+                   placeholder="Habilidad 4">
+            <input type="text" id="habilidad_5" class="form-control"
+                   placeholder="Habilidad 5">
+            </div>
+
+            <div class="Experencia">
+                <label>Experencia:</label>
+                <input type="text" id="nombreempresa" class="form-control"
+                       placeholder="Nombre de la Empresa">
+                <input type="text" id="descripcionempresa" class="form-control" placeholder="Descripción">
+                <input type="text" id="nombreempresa_2" class="form-control"
+                       placeholder="Nombre de la Empresa 2">
+                <input type="text" id="descripcionempresa_2" class="form-control" placeholder="Descripción">
+                <input type="text" id="nombreempresa_3" class="form-control"
+                       placeholder="Nombre de la Empresa 3">
+                <input type="text" id="descripcionempresa_3" class="form-control" placeholder="Descripción">
+            </div>
+
+            <div class="row g-3">
+                <label>Formación:</label>
+                <div class="col">
+                    <input type="text" id="escuela" class="form-control" placeholder="Nombre de Escuela"
+                           aria-label="Nombre de Escuela">
+                </div>
+                <div class="col">
+                    <input type="text" id="tiempo_escuela" class="form-control" placeholder="Fecha de Inicio y de Finalización"
+                           aria-label="Fecha de Inicio y de Finalización">
+                </div>
+                <div class="col">
+                    <input type="text" id="titulo_ejemplo" class="form-control" placeholder="Titulo u otra descripción"
+                           aria-label="Titulo Ejemplo">
+                </div>
+            </div>
+
+            <div class="botones">
+                <button id="insert" class="btn btn-primary">Insertar</button>
+                <button id="get-All" class="btn btn-success">Obtener</button>
+                <button id="actualizar" class="btn btn-warning">Actualizar</button>
+                <button id="borrar" class="btn btn-danger">Borrar por ID </button>
+                <input type="button" onclick="window.location.href='file:///C:/Users/carne/OneDrive/6to%20Semestre%20UNI/HETERO/test3.html';" class="btn btn-info" value="Generar CV"/>
+            </div>
+
+
+
+
+    <!--    <label>Matricula:</label>-->
+<!--    <input type="text" id="matricula" class="form-control" />-->
+<!--    <label>Nombre:</label>-->
+<!--    <input type="text" id="nombre" class="form-control" />-->
+<!--    <label>Apellido:</label>-->
+<!--    <input type="text" id="apellido" class="form-control" />-->
+<!--    <label>Direccion:</label>-->
+<!--    <input type="text" id="direccion" class="form-control" />-->
+<!--    <label>E-mail:</label>-->
+<!--    <input type="text" id="email" class="form-control" />-->
+<!--    <button id="buscar" class="btn btn-success">Buscar</button>-->
+<!--    <button id="get-All" class="btn btn-warning">Obtener Todos </button>-->
+<!--    <button id="borrar" class="btn btn-danger">Borrar por ID </button>-->
+<!--    <button id="insert" class="btn btn-primary">Instertar</button>-->
+<!--    <button id="actualizarNombre" class="btn btn-secondary">Actualizar Nombre</button>-->
+<!--    <button id="actualizar" class="btn btn-dark">Actualizar</button>-->
+
+
+    <table id="alumnos-grid" class="table">
+        <thread>
+            <tr>
+                <td>"id"</td>
+                <td>"nombre"</td>
+                <td>"apellido"</td>
+                <td>"ocupacion"</td>
+                <td>"perfil</td>
+                <td>"telefono"</td>
+                <td>"email"</td>
+                <td>habilidad_1</td>
+                <td>habilidad_2</td>
+                <td>habilidad_3</td>
+                <td>habilidad_4</td>
+                <td>habilidad_5</td>
+                <td>"nombreempresa"</td>
+                <td>"descripcionempresa"</td>
+                <td>"nombreempresa_2"</td>
+                <td>"descripcionempresa_2"</td>
+                <td>"nombreempresa_3"</td>
+                <td>"descripcionempresa_3"</td>
+                <td>"escuela"</td>
+                <td>"tiempo_escuela"</td>
+                <td>"titulo_ejemplo"</td>
+            </tr>
+        </thread>
+    </table>
+</div>
+
+
+
+
+</body>
+
+<script
+        src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+        crossorigin="anonymous">
+</script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+
+</script>
+</body>
+<script>
+    $( document ).ready(function() {
+
+        //Saludar
+        // $.ajax({
+        //    method:'GET',
+        //    url:"http://localhost:8080/api/saludar",
+        //    datatype:"text",
+        //    success:function (data){
+        //         $("#response").append(data)
+        //    }
+        // });
+
+
+            // $.ajax({
+            //    method:'GET',
+            //    url:"http://localhost:8080/api/llenar",
+            //    datatype:"text",
+            //    success:function (data){
+            //         $("#response").append(data)
+            //    }
+            // });
+
+        //GeAll
+        $("#get-All").click(function (){
+            $("#alumnos-grid > tbody").html('');
+            $.ajax({
+                method:'GET',
+                url:"http://localhost:8080/api/all",
+                dataType:"json",
+                contentType:"application/json",
+                success:function (data){
+                    $.each(data, function (i, item){
+                        var row="<tr id='"+item.id+"'>"+
+                            "<td>"+item.id+"</td>"+
+                            "<td>"+item.nombre+"</td>"+
+                            "<td>"+item.apellido+"</td>"+
+                            "<td>"+item.ocupacion+"</td>"+
+                            "<td>"+item.perfil+"</td>"+
+                            "<td>"+item.telefono+"</td>"+
+                            "<td>"+item.email+"</td>"+
+                            "<td>"+item.habilidad_1+"</td>"+
+                            "<td>"+item.habilidad_2+"</td>"+
+                            "<td>"+item.habilidad_3+"</td>"+
+                            "<td>"+item.habilidad_4+"</td>"+
+                            "<td>"+item.habilidad_5+"</td>"+
+                            "<td>"+item.nombreempresa+"</td>"+
+                            "<td>"+item.descripcionempresa+"</td>"+
+                            "<td>"+item.nombreempresa_2+"</td>"+
+                            "<td>"+item.descripcionempresa_2+"</td>"+
+                            "<td>"+item.nombreempresa_3+"</td>"+
+                            "<td>"+item.descripcionempresa_3+"</td>"+
+                            "<td>"+item.escuela+"</td>"+
+                            "<td>"+item.tiempo_escuela+"</td>"+
+                            "<td>"+item.titulo_ejemplo+"</td>"+
+                            "</tr>";
+                        $("#alumnos-grid > tbody").append(row);
+                });
+            }
+        });
+        });
+
+        //GetById
+        $("#buscar").click(function (){
+            $("#alumnos-grid > tbody").html('');
+            var idAlumno=$("#matricula").val();
+            $.ajax({
+                method:'GET',
+                url:"http://localhost:8080/api/find/"+idAlumno,
+                dataType:"json",
+                contentType: 'application/json',
+                success:function (data){
+                    console.log("data", data);
+                    var row="<tr id='"+data.id+"'>"+
+                            "<td>"+data.id+"</td>"+
+                            "<td>"+data.nombre+"</td>"+
+                            "<td>"+data.direccion+"</td>"+
+                            "<td>"+data.email+"</td>"+
+                            "</tr>";
+                        console.log("respuesta", row);
+                        $("#alumnos-grid > tbody").append(row);
+                }
+            });
+
+        });
+
+        //DeleteById
+        $("#borrar").click(function(){
+           // $("#alumnos-grid > tbody").html('');
+            var idAlumno=$("#matricula").val();
+            $.ajax({
+                method:'DELETE',
+                url:"http://localhost:8080/api/delete/"+idAlumno,
+                dataType:"json",
+                contentType: 'application/json',
+                success:function (data){
+                    // console.log("data", data);
+                    // var row="<tr id='"+item.id+"'>"+
+                    //     "<td>"+data.id+"</td>"+
+                    //     "<td>"+data.nombre+"</td>"+
+                    //     "<td>"+data.direccion+"</td>"+
+                    //     "<td>"+data.email+"</td>"+
+                    //     "</tr>";
+                    console.log("respuesta", data);
+                    $("#"+data.id).remove();
+                }
+            });
+
+        });
+
+        //Insertar
+        $("#insert").click(function () {
+            var alumno = {
+                id:$("#matricula").val(),
+                nombre:$("#nombre").val(),
+                apellido:$("#apellido").val(),
+                ocupacion:$("#ocupacion").val(),
+                perfil:$("#perfil").val(),
+                telefono:$("#telefono").val(),
+                email: $("#email").val(),
+                habilidad_1: $("#habilidad_1").val(),
+                habilidad_2: $("#habilidad_2").val(),
+                habilidad_3: $("#habilidad_3").val(),
+                habilidad_4: $("#habilidad_1").val(),
+                habilidad_5: $("#habilidad_1").val(),
+                nombreempresa: $("#nombreempresa").val(),
+                descripcionempresa: $("#descripcionempresa").val(),
+                nombreempresa_2: $("#nombreempresa_2").val(),
+                descripcionempresa_2: $("#descripcionempresa_2").val(),
+                nombreempresa_3: $("#nombreempresa_3").val(),
+                descripcionempresa_3: $("#descripcionempresa_3").val(),
+                escuela: $("#escuela").val(),
+                tiempo_escuela: $("#tiempo_escuela").val(),
+                titulo_ejemplo: $("#titulo_ejemplo").val()
+            }
+
+            $.ajax({
+                type:"POST",
+                url:"http://localhost:8080/api/save",
+                data:JSON.stringify(alumno),
+                dataType:'json',
+                contentType: 'application/json',
+                sucess:function (data){
+                    var row="<tr id='"+data.id+"'>"+
+                        "<td>"+item.id+"</td>"+
+                        "<td>"+item.nombre+"</td>"+
+                        "<td>"+item.apellido+"</td>"+
+                        "<td>"+item.ocupacion+"</td>"+
+                        "<td>"+item.perfil+"</td>"+
+                        "<td>"+item.telefono+"</td>"+
+                        "<td>"+item.email+"</td>"+
+                        "<td>"+item.habilidad_1+"</td>"+
+                        "<td>"+item.habilidad_2+"</td>"+
+                        "<td>"+item.habilidad_3+"</td>"+
+                        "<td>"+item.habilidad_4+"</td>"+
+                        "<td>"+item.habilidad_5+"</td>"+
+                        "<td>"+item.nombreempresa+"</td>"+
+                        "<td>"+item.descripcionempresa+"</td>"+
+                        "<td>"+item.nombreempresa_2+"</td>"+
+                        "<td>"+item.descripcionempresa_2+"</td>"+
+                        "<td>"+item.nombreempresa_3+"</td>"+
+                        "<td>"+item.descripcionempresa_3+"</td>"+
+                        "<td>"+item.escuela+"</td>"+
+                        "<td>"+item.tiempo_escuela+"</td>"+
+                        "<td>"+item.titulo_ejemplo+"</td>"+
+                        "</tr>";
+                    console.log("respuesta", row);
+                    $("#alumnos-grid > tbody").append(row);
+                }
+            });
+        });
+
+        // function getRow(data){
+        //     if(data!=null || data=="")
+        //         return "";
+        //     else {
+        //         var row=""+
+        //             "<td id='id-"+data.id+"'>"+data.id+"</td>"+
+        //             "<td id='nombre-"+data.id+"'>"+data.nombre+"</td>"+
+        //             "<td id='dir-"+data.id+"'>"+data.direccion+"</td>"+
+        //             "<td id='email-"+data.id+"'>"+data.email+"</td>"+
+        //             "";
+        //         return row
+        //     }
+        // }
+
+
+        // $("#actualizarNombre").click(function (){
+        //     var idAlumno=$("#matricula").val();
+        //     var nombre=$("#nombre").val();
+        //     $.ajax({
+        //        method:'PUT',
+        //         url:"http://localhost:8080/api/update/"+idAlumno+"/name/"+nombre,
+        //         dataType: 'json',
+        //         contentType: 'application/json',
+        //         sucess:function (data){
+        //            console.log("data", data);
+        //            $("#"+data.id).remove();
+        //             var row="<tr>"+
+        //                 "<td>"+data.id+"</td>"+
+        //                 "<td>"+data.nombre+"</td>"+
+        //                 "<td>"+data.apellido+"</td>"+
+        //                 "<td>"+data.ocupacion+"</td>"+
+        //                 "<td>"+data.perfil+"</td>"+
+        //                 "<td>"+data.telefono+"</td>"+
+        //                 "<td>"+data.email+"</td>"+
+        //                 "<td>"+data.habilidad_1+"</td>"+
+        //                 "<td>"+data.habilidad_2+"</td>"+
+        //                 "<td>"+data.habilidad_3+"</td>"+
+        //                 "<td>"+data.habilidad_4+"</td>"+
+        //                 "<td>"+data.habilidad_5+"</td>"+
+        //                 "<td>"+data.nombreempresa+"</td>"+
+        //                 "<td>"+data.descripcionempresa+"</td>"+
+        //                 "<td>"+data.nombreempresa_2+"</td>"+
+        //                 "<td>"+data.descripcionempresa_2+"</td>"+
+        //                 "<td>"+data.nombreempresa_3+"</td>"+
+        //                 "<td>"+data.descripcionempresa_3+"</td>"+
+        //                 "<td>"+data.escuela+"</td>"+
+        //                 "<td>"+data.tiempo_escuela+"</td>"+
+        //                 "<td>"+data.titulo_ejemplo+"</td>"+
+        //                 "</tr>";
+        //             console.log("respuesta", row);
+        //             $("#alumnos-grid > tbody").append(row);
+        //
+        //         }
+        //     });
+        // });
+
+        $("#actualizar").click(function () {
+            var alumno = {
+                id:$("#matricula").val(),
+                nombre:$("#nombre").val(),
+                apellido:$("#apellido").val(),
+                ocupacion:$("#ocupacion").val(),
+                perfil:$("#perfil").val(),
+                telefono:$("#telefono").val(),
+                email: $("#email").val(),
+                habilidad_1: $("#habilidad_1").val(),
+                habilidad_2: $("#habilidad_2").val(),
+                habilidad_3: $("#habilidad_3").val(),
+                habilidad_4: $("#habilidad_1").val(),
+                habilidad_5: $("#habilidad_1").val(),
+                nombreempresa: $("#nombreempresa").val(),
+                descripcionempresa: $("#descripcionempresa").val(),
+                nombreempresa_2: $("#nombreempresa_2").val(),
+                descripcionempresa_2: $("#descripcionempresa_2").val(),
+                nombreempresa_3: $("#nombreempresa_3").val(),
+                descripcionempresa_3: $("#descripcionempresa_3").val(),
+                escuela: $("#escuela").val(),
+                tiempo_escuela: $("#tiempo_escuela").val(),
+                titulo_ejemplo: $("#titulo_ejemplo").val()
+            }
+
+            $.ajax({
+                type:'PUT',
+                url:"http://localhost:8080/api/update",
+                data:JSON.stringify(alumno),
+                dataType:'json',
+                contentType: 'application/json',
+                sucess:function (data){
+                    var row="<tr>"+
+                        "<td>"+data.id+"</td>"+
+                        "<td>"+data.nombre+"</td>"+
+                        "<td>"+data.apellido+"</td>"+
+                        "<td>"+data.ocupacion+"</td>"+
+                        "<td>"+data.perfil+"</td>"+
+                        "<td>"+data.telefono+"</td>"+
+                        "<td>"+data.email+"</td>"+
+                        "<td>"+data.habilidad_1+"</td>"+
+                        "<td>"+data.habilidad_2+"</td>"+
+                        "<td>"+data.habilidad_3+"</td>"+
+                        "<td>"+data.habilidad_4+"</td>"+
+                        "<td>"+data.habilidad_5+"</td>"+
+                        "<td>"+data.nombreempresa+"</td>"+
+                        "<td>"+data.descripcionempresa+"</td>"+
+                        "<td>"+data.nombreempresa_2+"</td>"+
+                        "<td>"+data.descripcionempresa_2+"</td>"+
+                        "<td>"+data.nombreempresa_3+"</td>"+
+                        "<td>"+data.descripcionempresa_3+"</td>"+
+                        "<td>"+data.escuela+"</td>"+
+                        "<td>"+data.tiempo_escuela+"</td>"+
+                        "<td>"+data.titulo_ejemplo+"</td>"+
+                        "</tr>";
+                    console.log("respuesta", row);
+                    $("#alumnos-grid > tbody").append(row);
+                }
+            });
+        });
+
+
+
+    });
+
+
+
+</script>
+</html>

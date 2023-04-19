@@ -1,0 +1,207 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="tes3.css">
+        <body>
+            <div id="Nombre-del-Usuario"></div>
+            <div id="Apellido-del-Usuario"></div>
+            <div id="Ocupacion"></div>
+            <div class="horizontal_line"></div>
+            <h1 id="perfil">Perfil</h1>
+            <div id="Pérfil"></div>
+            <h1 id="contact">Contacto</h1>
+            <div id="Telefono"></div>
+            <div id="Email"></div>
+            <h1 id="habilidades">Habilidades</h1>
+            <div id="Habilidad1"></div>
+            <div id="Habilidad2"></div>
+            <div id="Habilidad3"></div>
+            <div id="Habilidad4"></div>
+            <div id="Habilidad5"></div>
+            <h1 id="experiencia">Experiencia Profesional</h1>
+            <div id="Empresa1"></div>
+            <div id="Descripcion1"></div>
+            <div id="Empresa2"></div>
+            <div id="Descripcion2"></div>
+            <div id="Empresa3"></div>
+            <div id="Descripcion3"></div>
+            <h1 id="formacion">Formación</h1>
+            <div class="vl"></div>
+        
+            <table>
+                <!-- <tr id="heading">
+                    <td>Escuela</td>
+                    <td>Tiempo de Inicio y Final</td>
+                    <td>Calificaciones/Titulo</td>
+                </tr>  -->
+                <tr>
+                    <div id="Escuela"></div>
+                    <div id="TiempoEscuela"></div>
+                    <div id="TituloEjemplo"></div>
+                </tr> 
+
+                <!-- <tr>
+                    <td>Escuelaa</td>
+                    <td>Tiempo de Inicio y Finalaaaa</td>
+                    <td>Calificaciones/Tituloasfas</td>
+                </tr> 
+             -->
+            </table>
+            
+        <script>
+            const nombreEl = document.getElementById('Nombre-del-Usuario');
+            const apellidoEl = document.getElementById('Apellido-del-Usuario');
+            const ocupacionEl = document.getElementById('Ocupacion');
+            const perfilEl = document.getElementById('Pérfil');
+            const telefonoEl = document.getElementById('Telefono');
+            const emailEl = document.getElementById('Email');
+            const habilidad1El = document.getElementById('Habilidad1');
+            const habilidad2El = document.getElementById('Habilidad2');
+            const habilidad3El = document.getElementById('Habilidad3');
+            const habilidad4El = document.getElementById('Habilidad4');
+            const habilidad5El = document.getElementById('Habilidad5');
+            const empresa1El = document.getElementById('Empresa1');
+            const Descripcion1El = document.getElementById('Descripcion1');
+            const empresa2El = document.getElementById('Empresa2');
+            const Descripcion2El = document.getElementById('Descripcion2');
+            const empresa3El = document.getElementById('Empresa3');
+            const Descripcion3El = document.getElementById('Descripcion3');
+            const EscuelaEl = document.getElementById('Escuela');
+            const TiempoEscuelaEl = document.getElementById('TiempoEscuela');
+            const TituloEjemploEl = document.getElementById('TituloEjemplo');
+            const URL = "http://localhost:8080/api/all";
+
+            fetch(URL)
+            .then(response => response.json())
+            .then(responseJson => 
+            {
+                for (let {nombre} of responseJson)
+                {
+                    const nombreusu = document.createElement('h1');
+                    nombreusu.innerText = nombre;
+                    nombreEl.append(nombreusu);
+                }
+                for (let {apellido} of responseJson)
+                {
+                    const apellidousus = document.createElement('h1');
+                    apellidousus.innerText = apellido;
+                    apellidoEl.append(apellidousus);
+                }
+                for (let {ocupacion} of responseJson)
+                {
+                    const ocupaciousu = document.createElement('h3');
+                    ocupaciousu.innerText = ocupacion;
+                    ocupacionEl.append(ocupaciousu);
+                }
+                for (let {perfil} of responseJson)
+                {
+                    const perfilusu = document.createElement('h3');
+                    perfilusu.innerText = perfil;
+                    perfilEl.append(perfilusu);
+                }
+                for (let {telefono} of responseJson)
+                {
+                    const telefonosu = document.createElement('h3');
+                    telefonosu.innerText = telefono;
+                    telefonoEl.append(telefonosu);
+                }  
+                for (let {email} of responseJson)
+                {
+                    const emailusu = document.createElement('h3');
+                    emailusu.innerText = email;
+                    emailEl.append(emailusu);
+                }     
+                for (let {habilidad_1} of responseJson)
+                {
+                    const habilidad1usu = document.createElement('h3');
+                    habilidad1usu.innerText = habilidad_1;
+                    habilidad1El.append(habilidad1usu);
+                }
+                for (let {habilidad_2} of responseJson)
+                {
+                    const habilidad2usu = document.createElement('h3');
+                    habilidad2usu.innerText = habilidad_2;
+                    habilidad2El.append(habilidad2usu);
+                }
+                for (let {habilidad_3} of responseJson)
+                {
+                    const habilidad3usu = document.createElement('h3');
+                    habilidad3usu.innerText = habilidad_3;
+                    habilidad3El.append(habilidad3usu);
+                }
+                for (let {habilidad_4} of responseJson)
+                {
+                    const habilidad4usu = document.createElement('h3');
+                    habilidad4usu.innerText = habilidad_4;
+                    habilidad4El.append(habilidad4usu);
+                }
+                for (let {habilidad_5} of responseJson)
+                {
+                    const habilidad5usu = document.createElement('h3');
+                    habilidad5usu.innerText = habilidad_5;
+                    habilidad5El.append(habilidad5usu);
+                }
+                for (let {nombreempresa} of responseJson)
+                {
+                    const nombreempresausu = document.createElement('h2');
+                    nombreempresausu.innerText = nombreempresa;
+                    empresa1El.append(nombreempresausu);
+                }
+                for (let {descripcionempresa} of responseJson)
+                {
+                    const descripcionempresausu = document.createElement('h3');
+                    descripcionempresausu.innerText = descripcionempresa;
+                    Descripcion1El.append(descripcionempresausu);
+                }
+                for (let {nombreempresa_2} of responseJson)
+                {
+                    const nombreempresa2usu = document.createElement('h2');
+                    nombreempresa2usu.innerText = nombreempresa_2;
+                    empresa2El.append(nombreempresa2usu);
+                }
+                for (let {descripcionempresa_2} of responseJson)
+                {
+                    const descripcionempresa2usu = document.createElement('h3');
+                    descripcionempresa2usu.innerText = descripcionempresa_2;
+                    Descripcion2El.append(descripcionempresa2usu);
+                }
+                for (let {nombreempresa_3} of responseJson)
+                {
+                    const nombreempresa3usu = document.createElement('h2');
+                    nombreempresa3usu.innerText = nombreempresa_3;
+                    empresa3El.append(nombreempresa3usu);
+                }
+                for (let {descripcionempresa_3} of responseJson)
+                {
+                    const descripcionempresa3usu = document.createElement('h3');
+                    descripcionempresa3usu.innerText = descripcionempresa_3;
+                    Descripcion3El.append(descripcionempresa3usu);
+                }
+                for (let {escuela} of responseJson)
+                {
+                    const escuelausu = document.createElement('h3');
+                    escuelausu.innerText = escuela;
+                    EscuelaEl.append(escuelausu);
+                }
+                for (let {tiempo_escuela} of responseJson)
+                {
+                    const tiempo_escuelausu = document.createElement('h3');
+                    tiempo_escuelausu.innerText = tiempo_escuela;
+                    TiempoEscuelaEl.append(tiempo_escuelausu);
+                }
+                for (let {titulo_ejemplo} of responseJson)
+                {
+                    const titulo_ejemplousu = document.createElement('h3');
+                    titulo_ejemplousu.innerText = titulo_ejemplo;
+                    TituloEjemploEl.append(titulo_ejemplousu);
+                }
+
+            })
+
+       
+
+
+
+            </script>
+            </head>
+        </body>
+        </html>
